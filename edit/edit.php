@@ -174,7 +174,7 @@
                 </div>
 
                 <div class ="grid-item">
-                    <button class= "small_btn" type="button" id="btn" onClick="window.location.href='edit-gamePub.php'"> Release Game </button>
+                    <button class= "small_btn" type="button" id="btn" onClick="window.location.href='edit-gamePub.php'"> Publish Game </button>
                 </div>
 
                 <div class="grid-item big_btn">

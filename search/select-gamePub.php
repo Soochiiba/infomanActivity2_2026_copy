@@ -113,7 +113,13 @@
             </select>
         </form>
         <button class="back-btn" type="button" onClick="window.location.href='search.php'"> Back </button>
-        <button class="back-btn" type="button" onClick="window.location.href='../TCPDF/tcpdf6/tcpdf/examples/mcs-gamPub.php'"> Print </button>
+        
+        <button class="back-btn" type="button" 
+            <?php if ($vsearch == "") echo "disabled style='opacity: 0.5; cursor: not-allowed;'"; ?>
+            onClick="window.location.href='../TCPDF/tcpdf6/tcpdf/examples/mcs-gamPub.php?vid=<?php echo $vsearch; ?>'"> 
+            Print 
+        </button>
+
         <button class="back-btn" type="button" onClick="window.location.href='../games.php'"> List </button>
     </div>
 

@@ -135,7 +135,7 @@
                 </div>
 
                 <div class ="grid-item">
-                    <button class= "small_btn" type="button" id="btn" onClick="window.location.href='games.php'"> Games </button>
+                    <button class= "small_btn" type="button" id="btn" onClick="window.location.href='games.php'"> Game Info </button>
                 </div>
 
                 <div class ="grid-item">
@@ -154,6 +154,10 @@
                     <button class= "small_btn" type="button" id="btn" onClick="window.location.href='employees.php'"> Employees </button>
                 </div>
                 
+                <div class ="grid-item">
+                    <button class= "small_btn" type="button" id="btn" onClick="window.location.href='releases.php'"> Releases </button>
+                </div>
+
             </div>
         </div>
     </body>

@@ -92,7 +92,7 @@
     </style>
 
     <head>
-        <title>Employee List</title>
+        <title>Game Info</title>
     </head>
 
     <body>
