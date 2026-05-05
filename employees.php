@@ -11,6 +11,7 @@
                 OR    pos_id      LIKE '%$vsearch%'
                 OR    lName         LIKE '%$vsearch%'
                 OR    fName     LIKE '%$vsearch%' 
+                OR    hire_date     LIKE '%$vsearch%'
                 ORDER BY e_no";
     } else {
         $sql = "SELECT * FROM employees ORDER BY e_no";
@@ -92,7 +93,7 @@
     </style>
 
     <head>
-        <title>Student List</title>
+        <title>Employee List</title>
     </head>
 
     <body>
@@ -101,8 +102,8 @@
             <button type="submit">  Search  </button>
             <a href="employees.php"><button type="button"> All </button></a>
 
-            <button type="reset" class="btn btn-warning btn-s" onClick="window.location.href='TCPDF/tcpdf6/tcpdf/examples/db1-employees.php'"> Print </button>
-            <button type="reset" class="btn btn-warning btn-s" onClick="window.location.href='actions/employees/insert.php'"> Insert </button>
+            <button type="reset" class="btn btn-warning btn-s" onClick="window.location.href='TCPDF/tcpdf6/tcpdf/examples/mcs-employees.php'"> Print </button>
+            <button type="reset" class="btn btn-warning btn-s" onClick="window.location.href='actions/employees/e_insert.php'"> Insert </button>
         </form>
         
         <table border="1" cellspacing="1">
@@ -112,6 +113,7 @@
                 <th>    Position     </th>
                 <th>    Last Name    </th>
                 <th>    First Name         </th>
+                <th>    Hire Date       </th>
                 <th>    Action         </th>
             </tr>
 
@@ -123,6 +125,7 @@
                     $vpos_id      = $row['pos_id'];
                     $vlName     = $row['lName'];
                     $vfName     = $row['fName'];
+                    $vhire_date = $row['hire_date'];
             ?>
                 <tr>
                     <td><?php echo $ve_no; ?></td>
@@ -130,16 +133,17 @@
                     <td><?php echo $vpos_id; ?></td>  
                     <td><?php echo $vlName; ?></td>  
                     <td><?php echo $vfName; ?></td> 
+                    <td><?php echo $vhire_date; ?></td>
                     <td> 
-                        <button type="button" class="btn btn-warning btn-s" onClick="window.location.href='actions/employees/update.php?vid=<?php echo $ve_no; ?>'">Update</button>
-                        <button type="button" class="btn btn-warning btn-s" onClick="window.location.href='actions/employees/delete.php?vid=<?php echo $ve_no; ?>'">Delete</button>
+                        <button type="button" class="btn btn-warning btn-s" onClick="window.location.href='actions/employees/e_update.php?vid=<?php echo $ve_no; ?>'">Update</button>
+                        <button type="button" class="btn btn-warning btn-s" onClick="window.location.href='actions/employees/e_delete.php?vid=<?php echo $ve_no; ?>'">Delete</button>
                     </td> 
                      
                 </tr>
             <?php     
                 }
             } else {
-                echo "<tr><td colspan='5'>No records found.</td></tr>";
+                echo "<tr><td colspan='7'>No records found.</td></tr>";
             }
             ?>
         </table>

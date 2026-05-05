@@ -70,6 +70,17 @@
             cursor: pointer;
         }
 
+        .big_btn2 button {
+            width: 100%;
+            height: 30px; 
+            background-color: #80a4ff;
+            border: none;
+            border-radius: 8px;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
         img 
         {
             width: 10%;
@@ -149,7 +160,7 @@
 
     <body>
         <img src="https://media.tenor.com/hegqVVuekjAAAAAj/neko-arc.gif" alt="necoarc.gif">
-            <h2> Search Menu </h2>
+            <h2> Edit Menu </h2>
         
         <div class ="main-container">
                 
@@ -159,17 +170,18 @@
                 </div>
 
                 <div class ="grid-item">
-                    <button class= "small_btn" type="button" id="btn" onClick="window.location.href='select-employee.php'"> Employee Assignments </button>
-                </div>  
+                    <button class= "small_btn" type="button" id="btn" onClick="window.location.href='edit-depAssign.php'"> Assign Department </button>
+                </div>
 
                 <div class ="grid-item">
-                    <button class= "small_btn" type="button" id="btn" onClick="window.location.href='select-gamePub.php'"> Game Publishers </button>
+                    <button class= "small_btn" type="button" id="btn" onClick="window.location.href='edit-gamePub.php'"> Release Game </button>
                 </div>
-                
+
                 <div class="grid-item big_btn">
-                    <button class="big_btn" type="button" id="btn" onClick="window.location.href='../edit/edit.php'"> Edit </button>
+                    <button class="big_btn2" type="button" id="btn" onClick="window.location.href='../search/search.php'"> Search </button>
                 </div>
-            </div>        
+            </div>
+            
         </div>
     </body>
 </html>

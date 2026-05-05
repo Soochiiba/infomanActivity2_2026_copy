@@ -131,7 +131,7 @@
                 
             <div class = "grid-container">
                 <div class="grid-item big_btn">
-                    <button class="big_btn" type="button" id="btn" onClick="window.location.href='search/search.php'"> Next Page </button>
+                    <button class="big_btn" type="button" id="btn" onClick="window.location.href='search/search.php'"> Search </button>
                 </div>
 
                 <div class ="grid-item">
