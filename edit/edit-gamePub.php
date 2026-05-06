@@ -94,7 +94,7 @@
             <a href="edit-gamePub.php"><button type="button">All</button></a>
             <!-- Link to your existing Print script -->
             <button type="button" class="btn-print" onClick="window.location.href='../TCPDF/tcpdf6/tcpdf/examples/mcs-gamPub.php'"> Print </button>
-            <button type="button" onClick="window.location.href='../actions/game_pub/gp_insert.php'"> Insert New Publishing </button>
+            <button type="button" onClick="window.location.href='../actions/game_pub/gpub_insert.php'"> Insert New Publishing </button>
         </form>
         
         <table>
@@ -118,11 +118,11 @@
                     <td><?php echo $vpub_title; ?></td>  
                     <td>
                         <button type="button" class="btn-edit" 
-                                onClick="window.location.href='../actions/game_pub/gp_update.php?vid=<?php echo $vgpub_id; ?>'">
+                                onClick="window.location.href='../actions/game_pub/gpub_update.php?vid=<?php echo $vgpub_id; ?>'">
                             Update
                         </button>
                         <button type="button" class="btn-delete" 
-                                onClick="if(confirm('Delete this publishing assignment?')) { window.location.href='../actions/game_pub/gp_delete.php?vid=<?php echo $vgpub_id; ?>'; }">
+                                onClick="if(confirm('Delete this publishing assignment?')) { window.location.href='../actions/game_pub/gpub_delete.php?vid=<?php echo $vgpub_id; ?>'; }">
                             Delete
                         </button>
                     </td>

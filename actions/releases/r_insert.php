@@ -15,7 +15,7 @@
     <form action="r_insert-save.php" method="post">
         <table align="center">
             <tr>
-                <th colspan="2"><h3>Add New Game Release</h3></th>
+                <td colspan="2" align="center" style="background-color: #4A90E2; color: white; border-radius: 8px 8px 0 0;"><h3>Add New Game Release</h3></th>
             </tr>
             <tr>
                 <td>Select Game:</td>
