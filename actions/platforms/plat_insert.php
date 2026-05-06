@@ -18,7 +18,7 @@
     <body>
         <!-- Action points to plat_insert-save.php, matching e_insert structure -->
         <form action="plat_insert-save.php" method="post" name="formadd" novalidate>
-            <table border="1">    
+            <table border="1" align = "center">    
                 <tr>
                     <td colspan="2" align="center" style="background-color: #4A90E2; color: white; border-radius: 8px 8px 0 0;">
                         <b>Insert Platform</b>

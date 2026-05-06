@@ -23,6 +23,15 @@ if (isset($_GET['vid']) && !empty($_GET['vid'])) {
 ?>
 
 <html>
+
+<head>
+    <style>
+            body { font-family: sans-serif; padding: 20px; background-color: #f4f7f6; }
+            table { background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+            select, input { width: 100%; padding: 8px; margin: 5px 0; }
+        </style>
+</head>
+
 <body>
     <form method="post" name="formdelete" id="formdelete" novalidate>
         <table border="1">    

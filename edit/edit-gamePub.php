@@ -93,7 +93,11 @@
             <button type="submit">Search</button>
             <a href="edit-gamePub.php"><button type="button">All</button></a>
             <!-- Link to your existing Print script -->
-            <button type="button" class="btn-print" onClick="window.location.href='../TCPDF/tcpdf6/tcpdf/examples/mcs-gamPub.php'"> Print </button>
+            
+            <button type="button" class="btn-print" onClick="window.location.href='../TCPDF/tcpdf6/tcpdf/examples/mcs-gamPub.php'">
+                Print 
+            </button>
+
             <button type="button" onClick="window.location.href='../actions/game_pub/gpub_insert.php'"> Insert New Publishing </button>
         </form>
         

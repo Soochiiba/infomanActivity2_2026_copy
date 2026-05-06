@@ -23,9 +23,16 @@ require("../../include/conn.php");
 ?>
 
 <html>
+    <head>
+        <style>
+            body { font-family: sans-serif; padding: 20px; background-color: #f4f7f6; }
+            table { background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+            select, input { width: 100%; padding: 8px; margin: 5px 0; }
+        </style>
+    </head>
     <body>
         <form action="plat_update-save.php" method="post" name="formupdate" novalidate>
-        <table border="1">    
+        <table border="1" align="center">    
             <tr>
                 <td colspan="2" align="center"><b>Update Platform Record</b></td>
             </tr>

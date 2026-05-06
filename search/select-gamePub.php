@@ -116,7 +116,7 @@
         
         <button class="back-btn" type="button" 
             <?php if ($vsearch == "") echo "disabled style='opacity: 0.5; cursor: not-allowed;'"; ?>
-            onClick="window.location.href='../TCPDF/tcpdf6/tcpdf/examples/mcs-gamPub.php?vid=<?php echo $vsearch; ?>'"> 
+            onClick="window.location.href='../TCPDF/tcpdf6/tcpdf/examples/mcs-pubsGam.php?vid=<?php echo $vsearch; ?>'"> 
             Print 
         </button>
 
